@@ -1,0 +1,29 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container .title-outer {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container .title-outer .top-title {
+    font-size: 40px;
+    transition: all 250ms ease-in-out;
+}
+
+.title-container .title-outer .middle-title {
+    font-size: 40px;
+    transition: all 250ms ease-in-out;
+}
+
+.title-container .title-outer .buttom-title {
+    font-size: 40px;
+    transition: all 250ms ease-in-out;
+}
