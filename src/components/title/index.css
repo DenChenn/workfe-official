@@ -14,6 +14,7 @@
 }
 
 .title-container .title-outer .hidden{
+    position: relative;
     overflow: hidden;
 }
 
@@ -29,9 +30,8 @@
     background: #6d3318;
     height: 60px;
     animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    position: absolute;
     font-weight: 600;
-    animation-delay: 0.5;
+    position: absolute;
 }
 
 .title-container .title-outer .hidden .middle-title {
@@ -51,11 +51,11 @@
 @keyframes mainBlock {
     0% {
         width: 0%;
-        left: 0;
+        left: 0%;
     }
     50% {
         width: 100%;
-        left: 0;
+        left: 0%;
     }
     100% {
         width: 0;
