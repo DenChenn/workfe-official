@@ -13,17 +13,52 @@
     flex-direction: column;
 }
 
-.title-container .title-outer .top-title {
+.title-container .title-outer .hidden{
+    overflow: hidden;
+}
+
+.title-container .title-outer .hidden .top-title {
     font-size: 40px;
+    font-weight: 600;
+    transition: all 250ms ease-in-out;
+    overflow: hidden;
+}
+
+.title-container .title-outer .hidden .block {
+    width: inherit;
+    background: #6d3318;
+    height: 60px;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    position: absolute;
+    font-weight: 600;
+    animation-delay: 0.5;
+}
+
+.title-container .title-outer .hidden .middle-title {
+    font-size: 40px;
+    transition: all 250ms ease-in-out;
+    position: relative;
+    font-weight: 600;
+    color: #a35531;
+}
+
+.title-container .title-outer .hidden .buttom-title {
+    font-size: 40px;
+    font-weight: 600;
     transition: all 250ms ease-in-out;
 }
 
-.title-container .title-outer .middle-title {
-    font-size: 40px;
-    transition: all 250ms ease-in-out;
-}
-
-.title-container .title-outer .buttom-title {
-    font-size: 40px;
-    transition: all 250ms ease-in-out;
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
 }
