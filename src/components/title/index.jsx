@@ -3,35 +3,75 @@ import "./index.css"
 import {motion} from "framer-motion"
 
 const Title = ({isOpen}) => {
-    const TopTitleVariants = {
+    const TitleVariants = {
         "open": {
-            opacity: 1,
-            transform: "translateY(0%)"
+            transform: "translateY(0%)",
         },
         "closed": {
-            opacity: 0,
-            transform: "translateY(100%)"
+            transform: "translateY(100%)",
         }
     };
 
-    const Transition = {
+    const MiddleVariants = {
+        "open": {
+            transform: "translateX(0%)",
+        },
+        "closed": {
+            transform: "translateX(100%)",
+        }
+    }
+
+    const TopTitleTransition = {
         duration: 0.5,
     }
+
+    const ButtomTitleTransition = {
+        duration: 0.5,
+        delay: 0.5,
+    }
+
+    const MiddleTitleTransition = {
+        duration: 0.5,
+        delay: 1.5
+    } 
 
     return (
         <div className="title-container">
             <div className="title-outer">
-                <motion.div 
-                    className="top-title"
-                    animate={isOpen ? "open" : "closed"}
-                    initial={false}
-                    variants={TopTitleVariants}
-                    transition={Transition}
-                >
-                    讓我們幫您
-                </motion.div>
-                <motion.div className="middle-title">用更聰明的方式</motion.div>
-                <motion.div className="buttom-title">找到合適的咖啡廳</motion.div>
+                <div className="hidden">
+                    <motion.div 
+                        className="top-title"
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={TitleVariants}
+                        transition={TopTitleTransition}
+                    >
+                        讓我們幫您
+                    </motion.div>
+                </div>
+                <div className="hidden">
+                    <div className="block"></div>
+                    <motion.div
+                        className="middle-title"
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={MiddleVariants}
+                        transition={MiddleTitleTransition}
+                    >
+                        用更聰明的方式
+                    </motion.div>
+                </div>
+                <div className="hidden">
+                    <motion.div 
+                        className="buttom-title"
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={TitleVariants}
+                        transition={ButtomTitleTransition}
+                    >
+                        找到合適的咖啡廳
+                    </motion.div>
+                </div>
             </div>
         </div>
     );
