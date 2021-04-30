@@ -1,0 +1,6 @@
+.people-container {
+    position: absolute;
+    z-index: 50;
+    left: 65%;
+    top: 36%;
+}
