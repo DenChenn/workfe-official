@@ -1,5 +1,7 @@
 import {React, useState, useEffect} from "react"
 import Title from "../../components/title/index"
+import Map from "../../components/map/index"
+import NavBar from "../../components/navbar/index"
 import "./index.css"
 
 const FirstPage = () => {
@@ -11,7 +13,11 @@ const FirstPage = () => {
 
     return (
         <div className="first-page-container">
-            <Title isOpen={isOpen}/>
+            <NavBar></NavBar>
+            <div className="content">
+                <Title isOpen={isOpen}/>
+                <Map isOpen={isOpen}/>
+            </div>
         </div>
     );
 }
