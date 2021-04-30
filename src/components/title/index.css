@@ -6,6 +6,7 @@
     position: fixed;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .title-container .title-outer {
@@ -26,10 +27,8 @@
 }
 
 .title-container .title-outer .hidden .block {
-    width: inherit;
     background: #6d3318;
     height: 60px;
-    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     font-weight: 600;
     position: absolute;
 }
@@ -46,19 +45,4 @@
     font-size: 40px;
     font-weight: 600;
     transition: all 250ms ease-in-out;
-}
-
-@keyframes mainBlock {
-    0% {
-        width: 0%;
-        left: 0%;
-    }
-    50% {
-        width: 100%;
-        left: 0%;
-    }
-    100% {
-        width: 0;
-        left: 100%;
-    }
 }
