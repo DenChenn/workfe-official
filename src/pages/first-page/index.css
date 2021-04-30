@@ -1,5 +1,14 @@
 .first-page-container {
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-page-container .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
 }
