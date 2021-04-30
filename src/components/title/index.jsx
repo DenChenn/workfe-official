@@ -19,21 +19,32 @@ const Title = ({isOpen}) => {
         "closed": {
             transform: "translateX(100%)",
         }
-    }
+    };
+
+    const BlockAnimate = {
+        width: ["0%", "100%", "0%"],
+        left: ["0%", "0%", "100%"],
+    };
+
+    const BlockTransition = {
+        duration: 1,
+        time: [0, 0.7, 1],
+        delay: 1,
+    };
 
     const TopTitleTransition = {
         duration: 0.5,
-    }
+    };
 
     const ButtomTitleTransition = {
         duration: 0.5,
-        delay: 0.5,
-    }
+        delay: 0.2,
+    };
 
     const MiddleTitleTransition = {
         duration: 0.5,
-        delay: 1.5
-    } 
+        delay: 2
+    };
 
     return (
         <div className="title-container">
@@ -43,6 +54,7 @@ const Title = ({isOpen}) => {
                         className="top-title"
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
+                        transition={TopTitleTransition}
                         variants={TitleVariants}
                         transition={TopTitleTransition}
                     >
@@ -50,7 +62,12 @@ const Title = ({isOpen}) => {
                     </motion.div>
                 </div>
                 <div className="hidden">
-                    <div className="block"></div>
+                    <motion.div 
+                        className="block"
+                        animate={BlockAnimate}
+                        transition={BlockTransition}
+                    >
+                    </motion.div>
                     <motion.div
                         className="middle-title"
                         animate={isOpen ? "open" : "closed"}
