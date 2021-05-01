@@ -56,7 +56,6 @@ const Title = ({isOpen}) => {
                         initial={false}
                         transition={TopTitleTransition}
                         variants={TitleVariants}
-                        transition={TopTitleTransition}
                     >
                         讓我們幫您
                     </motion.div>
