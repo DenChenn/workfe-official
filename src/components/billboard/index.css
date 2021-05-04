@@ -1,0 +1,126 @@
+.billboard-container {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.billboard-container .board-back {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    left: 25%;
+}
+
+.billboard-container .leaf {
+    position: absolute;
+}
+
+.billboard-container .person {
+    position: absolute;
+}
+
+.billboard-container .board {
+    position: absolute;
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 43%;
+}
+
+.billboard-container .board .row {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.7em;
+}
+
+.billboard-container .board .row .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+.billboard-container .board .row .left .top-title {
+    position: relative;
+    height: 30%;
+    width: 100%;
+    color: #FFF;
+    font-size: 0.7em;
+}
+
+.billboard-container .board .row .left .empty {
+    background-color: #FFF;
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    top: 50%;
+    z-index: 0;
+    border-radius: 35px;
+}
+
+.billboard-container .board .row .left .taken-1 {
+    background-color: #90796E;
+    position: absolute;
+    width: 70%;
+    height: 20%;
+    top: 50%;
+    z-index: 50;
+    border-radius: 25px;
+}
+
+.billboard-container .board .row .left .taken-2 {
+    background-color: #90796E;
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 50%;
+    z-index: 50;
+    border-radius: 25px;
+}
+
+.billboard-container .board .row .left .taken-3 {
+    background-color: #90796E;
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: 50%;
+    z-index: 50;
+    border-radius: 25px;
+}
+
+.billboard-container .board .row .left .taken-4 {
+    background-color: #90796E;
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    top: 50%;
+    z-index: 50;
+    border-radius: 25px;
+}
+
+.billboard-container .board .row .left .taken-5 {
+    background-color: #90796E;
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 50%;
+    z-index: 50;
+    border-radius: 25px;
+}
+
+.billboard-container .board .row .right {
+    width: 40%;
+    font-size: 0.7em;
+    color: #FFF;
+}
