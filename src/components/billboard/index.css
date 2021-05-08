@@ -14,10 +14,18 @@
 
 .billboard-container .leaf {
     position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 69.3%;
+    left: 23%;
 }
 
 .billboard-container .person {
     position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 33%;
+    left: 87%;
 }
 
 .billboard-container .board {
