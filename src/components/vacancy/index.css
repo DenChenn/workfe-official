@@ -1,0 +1,69 @@
+.vacancy-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.vacancy-container .vacancy-outer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancy-container .vacancy-outer .hidden {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+}
+
+.vacancy-container .vacancy-outer .hidden .block {
+    width: 0%;
+    height: 100%;
+    background-color: #5c2912;
+    position: absolute;
+}
+
+.vacancy-container .vacancy-outer .hidden .title {
+    position: relative;
+    font-size: 2em;
+    font-weight: 600;
+    color: #90796E;
+}
+
+.vacancy-container .vacancy-outer .hidden-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.vacancy-container .vacancy-outer .hidden-2 .sub-title {
+    position: relative;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    font-weight: 600;
+    color: #4F4F4F;
+}
+
+.vacancy-container .vacancy-outer .content-1 {
+    position: relative;
+    font-size: 1em;
+    margin-top: 2.5em;
+    color: #828282;
+}
+
+.vacancy-container .vacancy-outer .content-2 {
+    position: relative;
+    font-size: 1em;
+    margin-top: 2.5em;
+    color: #828282;
+}
+
+.vacancy-container .vacancy-outer .content-3 {
+    position: relative;
+    font-size: 1em;
+    margin-top: 0.5em;
+    color: #828282;
+}
