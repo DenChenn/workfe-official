@@ -1,0 +1,111 @@
+.tagmark-container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.tagmark-container .background {
+    position: relative;
+    width: 45vh;
+    height: 45vh;
+    left: 10vh;
+}
+
+.tagmark-container .girl {
+    position: absolute;
+    width: 20vh;
+    height: 45vh;
+    left: 52vh;
+}
+
+.tagmark-container .right-leaf {
+    position: absolute;
+    width: 6vh;
+    height: 6vh;
+    left: 45vh;
+    top: 66vh;
+    z-index: 10;
+}
+
+.tagmark-container .left-leaf {
+    position: absolute;
+    width: 6vh;
+    height: 6vh;
+    left: 20vh;
+    top: 66vh;
+    z-index: 10;
+}
+
+.tagmark-container .mark {
+    position: absolute;
+    width: 45vh;
+    height: 45vh;
+    top: 30vh;
+    left: 10vh;
+}
+
+/*網美*/
+.tagmark-container .tag-1 {
+    position: absolute;
+    font-size: 1.1em;
+    left: 20vh;
+    top: 25vh;
+    color: #828282;
+}
+
+/*大自然*/
+.tagmark-container .tag-2 {
+    position: absolute;
+    font-size: 1.1em;
+    left: 0vh;
+    top: 35vh;
+    color: #828282;
+}
+
+/*桌子很大*/
+.tagmark-container .tag-3 {
+    position: absolute;
+    font-size: 1.1em;
+    left: 50vh;
+    top: 78vh;
+    color: #828282;
+}
+
+/*適合讀書*/
+.tagmark-container .tag-4 {
+    position: absolute;
+    font-size: 1.1em;
+    left: 30vh;
+    top: 75vh;
+    color: #828282;
+}
+
+/*貓貓蟲咖波*/
+.tagmark-container .tag-5 {
+    position: absolute;
+    font-size: 1.1em;
+    left: 40vh;
+    top: 27vh;
+    color: #828282;
+}
+
+/*外語交流*/
+.tagmark-container .tag-6 {
+    position: absolute;
+    font-size: 1.1em;
+    left: 67vh;
+    top: 50vh;
+    color: #828282;
+}
+
+/*流行音樂*/
+.tagmark-container .tag-7 {
+    position: absolute;
+    font-size: 1.1em;
+    left: 0vh;
+    top: 70vh;
+    color: #828282;
+}
