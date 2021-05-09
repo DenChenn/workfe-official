@@ -24,7 +24,6 @@ const Billboard = ({isOpen}) => {
             strokeDashoffset: 0,
         },
         closed:{
-            
         }
     }
 
