@@ -16,6 +16,7 @@ const Pin = ({isOpen}) => {
 
     const PinTransition = {
         duration: 0.5,
+        delay: 1.2
     }
 
     return (

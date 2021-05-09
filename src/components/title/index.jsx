@@ -29,7 +29,7 @@ const Title = ({isOpen}) => {
     const BlockTransition = {
         duration: 1,
         time: [0, 0.7, 1],
-        delay: 1,
+        delay: 2,
     };
 
     const TopTitleTransition = {
@@ -43,7 +43,7 @@ const Title = ({isOpen}) => {
 
     const MiddleTitleTransition = {
         duration: 0.5,
-        delay: 2
+        delay: 2.5
     };
 
     return (

@@ -107,20 +107,35 @@ const Billboard = ({isOpen}) => {
         delay: 1.5
     }
 
-    const EmptyAnimation1 = {
-        width: ["0%", "70%"],
+    const EmptyVariants1 = {
+        open: {
+            width: ["0%", "70%"],
+        },
+        closed: {}
     }
-    const EmptyAnimation2 = {
-        width: ["0%", "40%"],
+    const EmptyVariants2 = {
+        open: {
+            width: ["0%", "40%"],
+        },
+        closed: {}
     }
-    const EmptyAnimation3 = {
-        width: ["0%", "30%"],
+    const EmptyVariants3 = {
+        open: {
+            width: ["0%", "30%"],
+        },
+        closed: {}
     }
-    const EmptyAnimation4 = {
-        width: ["0%", "50%"],
+    const EmptyVariants4 = {
+        open: {
+            width: ["0%", "50%"],
+        },
+        closed: {}
     }
-    const EmptyAnimation5 = {
-        width: ["0%", "10%"],
+    const EmptyVariants5 = {
+        open: {
+            width: ["0%", "10%"],
+        },
+        closed: {}
     }
 
     const EmptyTransition = {
@@ -232,7 +247,9 @@ const Billboard = ({isOpen}) => {
                         <div className="empty"></div>
                         <motion.div 
                             className="taken-1"
-                            animate={EmptyAnimation1}
+                            animate={isOpen ? "open" : "closed"}
+                            initial={false}
+                            variants={EmptyVariants1}
                             transition={EmptyTransition}
                         ></motion.div>
                     </div>
@@ -250,7 +267,9 @@ const Billboard = ({isOpen}) => {
                         <div className="empty"></div>
                         <motion.div 
                             className="taken-2"
-                            animate={EmptyAnimation2}
+                            animate={isOpen ? "open" : "closed"}
+                            initial={false}
+                            variants={EmptyVariants2}
                             transition={EmptyTransition}
                         ></motion.div>
                     </div>
@@ -268,7 +287,9 @@ const Billboard = ({isOpen}) => {
                         <div className="empty"></div>
                         <motion.div 
                             className="taken-3"
-                            animate={EmptyAnimation3}
+                            animate={isOpen ? "open" : "closed"}
+                            initial={false}
+                            variants={EmptyVariants3}
                             transition={EmptyTransition}
                         ></motion.div>
                     </div>
@@ -286,7 +307,9 @@ const Billboard = ({isOpen}) => {
                         <div className="empty"></div>
                         <motion.div 
                             className="taken-4"
-                            animate={EmptyAnimation4}
+                            animate={isOpen ? "open" : "closed"}
+                            initial={false}
+                            variants={EmptyVariants4}
                             transition={EmptyTransition}
                         ></motion.div>
                     </div>
@@ -304,7 +327,9 @@ const Billboard = ({isOpen}) => {
                         <div className="empty"></div>
                         <motion.div 
                             className="taken-5"
-                            animate={EmptyAnimation1}
+                            animate={isOpen ? "open" : "closed"}
+                            initial={false}
+                            variants={EmptyVariants5}
                             transition={EmptyTransition}
                         ></motion.div>
                     </div>

@@ -3,15 +3,18 @@ import "./index.css"
 import {motion} from "framer-motion"
 
 const Freetag = ({isOpen}) => {
-    const blockAnimate = {
-        width: ["0%", "100%", "0%"],
-        left: ["0%", "0%", "100%"],
+    const blockVariants = {
+        open: {
+            width: ["0%", "100%", "0%"],
+            left: ["0%", "0%", "100%"],
+        },
+        closed: {}
     };
 
     const blockTransition = {
         duration: 1,
         time: [0, 0.7, 1],
-        delay: 1,
+        delay: 3,
     };
 
     const titleVariants = {
@@ -25,7 +28,7 @@ const Freetag = ({isOpen}) => {
 
     const titleTransition = {
         duration: 0.5,
-        delay: 2
+        delay: 4
     }
 
     const subTitleVariants = {
@@ -39,7 +42,7 @@ const Freetag = ({isOpen}) => {
 
     const subTitleTransition = {
         duration: 0.5,
-        delay: 2.5
+        delay: 4.5
     }
 
     const contentVariants = {
@@ -53,7 +56,7 @@ const Freetag = ({isOpen}) => {
 
     const contentTransition = {
         duration: 1,
-        delay: 3
+        delay: 5
     }
 
     return (
@@ -62,7 +65,9 @@ const Freetag = ({isOpen}) => {
                 <div className="hidden">
                     <motion.div 
                         className="block"
-                        animate={blockAnimate}
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={blockVariants}
                         transition={blockTransition}
                     ></motion.div>
                     <motion.div

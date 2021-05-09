@@ -147,9 +147,12 @@ const Tagmerk = ({isOpen}) => {
         delay: 2.5
     }
 
-    const contentAnimation = {
-        scale: [0.5, 1.3, 1],
-        opacity: [0, 0.7, 1]
+    const contentVariants = {
+        open:{
+            scale: [0.5, 1.3, 1],
+            opacity: [0, 0.7, 1]
+        },
+        closed: {}
     }
 
     return (
@@ -407,37 +410,51 @@ const Tagmerk = ({isOpen}) => {
             </div>
             <motion.div 
                 className="tag-1"
-                animate={contentAnimation}
+                animate={isOpen ? "open" : "closed"}
+                initial={false}
+                variants={contentVariants}
                 transition={{ time: [0,0.3,0.5]}}
             >#網美</motion.div>
             <motion.div 
                 className="tag-2"
-                animate={contentAnimation}
+                animate={isOpen ? "open" : "closed"}
+                initial={false}
+                variants={contentVariants}
                 transition={{ time: [0,0.3,0.5], delay: 0.5}}
             >#大自然</motion.div>
             <motion.div 
                 className="tag-3"
-                animate={contentAnimation}
+                animate={isOpen ? "open" : "closed"}
+                initial={false}
+                variants={contentVariants}
                 transition={{ time: [0,0.3,0.5], delay: 1}}
             >#桌子很大</motion.div>
             <motion.div 
                 className="tag-4"
-                animate={contentAnimation}
+                animate={isOpen ? "open" : "closed"}
+                initial={false}
+                variants={contentVariants}
                 transition={{ time: [0,0.3,0.5], delay: 1.5}}
             >#適合讀書</motion.div>
             <motion.div 
                 className="tag-5"
-                animate={contentAnimation}
+                animate={isOpen ? "open" : "closed"}
+                initial={false}
+                variants={contentVariants}
                 transition={{ time: [0,0.3,0.5], delay: 2}}
             >#貓貓蟲咖波</motion.div>
             <motion.div 
                 className="tag-6"
-                animate={contentAnimation}
+                animate={isOpen ? "open" : "closed"}
+                initial={false}
+                variants={contentVariants}
                 transition={{ time: [0,0.3,0.5], delay: 2.5}}
             >#外語交流</motion.div>
             <motion.div 
                 className="tag-7"
-                animate={contentAnimation}
+                animate={isOpen ? "open" : "closed"}
+                initial={false}
+                variants={contentVariants}
                 transition={{ time: [0,0.3,0.5], delay: 3}}
             >#流行音樂</motion.div>
         </div>
