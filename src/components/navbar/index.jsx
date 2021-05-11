@@ -4,7 +4,7 @@ import "./index.css"
 const NavBar = () => {
     return (    
         <div className="navbar-container">
-            <img src="image/Logo.svg" />
+            <img src="image/Logo.svg" alt="#"/>
         </div>
     );
 }

@@ -1,5 +1,4 @@
-import {React, useState} from "react"
-import {motion} from "framer-motion"
+import React from "react"
 import "./index.css"
 import Pin from "./pin"
 import Phone from "./phone"

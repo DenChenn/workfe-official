@@ -52,9 +52,9 @@ const Cafe1 = ({isOpen}) => {
         >
             <div className="name">星八克(新大興門市)</div>
             <div className="image-gallery">
-                <img src="image/starbuck1.jpeg"/>
-                <img src="image/starbuck2.jpeg"/>
-                <img src="image/starbuck3.jpeg"/>
+                <img src="image/starbuck1.jpeg" alt="#"/>
+                <img src="image/starbuck2.jpeg" alt="#"/>
+                <img src="image/starbuck3.jpeg" alt="#"/>
             </div>
             <div className="tag">#好讀書 #好舒適</div>
             <motion.div 

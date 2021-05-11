@@ -12,7 +12,7 @@ const ThirdPage = () => {
         const onScroll = () => {
             const scrollPosition = window.scrollY + window.innerHeight;
             if(topPosition < scrollPosition) { 
-                setOpen(!isOpen)
+                setOpen(true)
             }
           };
         window.addEventListener("scroll", onScroll);

@@ -8,7 +8,7 @@ const FirstPage = () => {
     const [isOpen, setOpen] = useState(false);
 
     useEffect(() => {
-        setOpen(!isOpen)
+        setOpen(true)
     }, [])
 
     return (

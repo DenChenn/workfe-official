@@ -1,13 +1,7 @@
-import {React, useState, useEffect} from "react"
+import React from "react"
 import "./index.css"
 
 const SixthPage = () => {
-    const [isOpen, setOpen] = useState(false);
-
-    useEffect(() => {
-        setOpen(!isOpen)
-    }, [])
-
     return (
         <div className="sixth-page-container">
             <div className="title">用更聰明的方式</div>
